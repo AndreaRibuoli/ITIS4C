@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+.ipynb_checkpoints/*.*
 
 # Log file
 *.log
