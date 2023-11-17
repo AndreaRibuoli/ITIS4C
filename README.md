@@ -37,3 +37,29 @@ public class Scaffale {
 ```
 
 ### attenzione coi costruttori di copia
+
+### stringhe Java e Unicode
+
+``` sh
+javac Comprensione.java
+java Comprensione
+------------------------
+Io vivo in Italia (🇮🇹)
+------------------------
+```
+
+Perchè la lunghezza del tratteggio eccede la stringa se il codice Java è il seguente?
+
+``` java
+public class Comprensione {
+	public static void main (String[] args) {
+		String messaggio = "Io vivo in Italia (🇮🇹)";
+		int len = messaggio.length();
+		for(int i=0; i<len; i++) System.out.print("-");
+		System.out.println("");
+		System.out.println(messaggio);
+		for(int i=0; i<len; i++) System.out.print("-");
+		System.out.println("");		
+	}
+}
+```
