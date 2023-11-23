@@ -156,3 +156,28 @@ public class Itis4cJavaFX extends Application {
   }
 }
 ```
+
+### passi di predisposizione, compilazione ed esecuzione
+
+Predisposizione ambiente:
+
+```
+cd ITIS4C
+export PATH_TO_FX=<<percorso assoluto>>/javafx-sdk-21.0.1/lib
+```
+
+Compilazione:
+
+```
+javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml Itis4cJavaFX.java
+```
+
+Esecuzione:
+
+```
+java --module-path $PATH_TO_FX --add-modules javafx.controls Itis4cJavaFX
+```
+
+![](appJavaFX.png)
+
+![](rimasto.png)
