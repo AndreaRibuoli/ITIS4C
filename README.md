@@ -218,7 +218,7 @@ public class Ricordami {
 	}
 		
 	public static void main(String[] args) {	
-		try {
+        try {
             Ricordami t0 = new Ricordami( 7, 30);
 	    }
 	    catch (OrarioNonValido e) {
