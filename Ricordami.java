@@ -26,13 +26,36 @@ public class Ricordami {
 		ore = hh;
 		minuti = mm;           
 	}
-	
-	
-	public static void main(String[] args) throws OrarioNonValido, OrarioGiaPassato {		
-//      Ricordami t0 = new Ricordami( 7, 30);
-        Ricordami t1 = new Ricordami(13, 49);
-        System.out.println("Sono rimasti " + t1.getMinutiRimasti() + " minuti.");
-//      Ricordami t2 = new Ricordami(25, 30);
+		
+	public static void main(String[] args) {	
+		try {
+            Ricordami t0 = new Ricordami( 7, 30);
+	    }
+	    catch (OrarioNonValido e) {
+			System.out.println("Eccezione: OrarioNonValido.");
+		}		
+	    catch (OrarioGiaPassato e) {
+			System.out.println("Eccezione: OrarioGiaPassato.");
+		}
+		try {
+            Ricordami t1 = new Ricordami(13, 49);
+	        System.out.println("Sono rimasti " + t1.getMinutiRimasti() + " minuti.");
+	    }
+	    catch (OrarioNonValido e) {
+			System.out.println("Eccezione: OrarioNonValido.");
+		}		
+	    catch (OrarioGiaPassato e) {
+			System.out.println("Eccezione: OrarioGiaPassato.");
+		}			
+		try {
+            Ricordami t2 = new Ricordami(25, 30);
+	    }
+	    catch (OrarioNonValido e) {
+			System.out.println("Eccezione: OrarioNonValido.");
+		}		
+	    catch (OrarioGiaPassato e) {
+			System.out.println("Eccezione: OrarioGiaPassato.");
+		}			
 	}
 	
 }
