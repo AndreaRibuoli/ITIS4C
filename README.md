@@ -184,7 +184,7 @@ java --module-path $PATH_TO_FX --add-modules javafx.controls Itis4cJavaFX
 
 ### *handle or declare*
 
-Inserendo all'interno di sezioni *try/catch* le istanziazioni della classe *Ricordami* presenti nel *main* possiamo omettere la dichiarazione **throws**.
+Inserendo all'interno di sezioni *try/catch* le instanziazioni della classe *Ricordami* presenti nel *main* possiamo omettere la dichiarazione **throws**.
 Questo è quello a cui ci si riferisce con la regola **handle or declare**:
 
 ``` java
